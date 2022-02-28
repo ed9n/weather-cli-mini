@@ -1,9 +1,12 @@
 {
-  "name": "weather-cli",
-  "version": "1.0.0",
+  "name": "weather-cli-mini",
+  "version": "1.0.1",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +25,10 @@
     "url": "https://github.com/ed9n/node.js-demo/issues",
     "email": "eduard.rzhautski@gmail.com"
   },
-  "homepage": "https://github.com/ed9n/node.js-demo#readme"
+  "homepage": "https://github.com/ed9n/node.js-demo#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
+  }
 }
